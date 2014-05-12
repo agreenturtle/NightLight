@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2301AA7190F6EF400857BE1 /* NightLightObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2301AA6190F6EF400857BE1 /* NightLightObject.m */; };
+		F2301AAD1910A5FD00857BE1 /* AlarmSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2301AAC1910A5FD00857BE1 /* AlarmSettingsViewController.m */; };
+		F2301AB01910A62200857BE1 /* ClockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2301AAF1910A62200857BE1 /* ClockObject.m */; };
+		F2665D3F190A49A5004A1013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2665D3E190A49A4004A1013 /* Foundation.framework */; };
+		F2665D41190A49A5004A1013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2665D40190A49A5004A1013 /* CoreGraphics.framework */; };
+		F2665D43190A49A5004A1013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2665D42190A49A5004A1013 /* UIKit.framework */; };
+		F2665D49190A49A5004A1013 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2665D47190A49A5004A1013 /* InfoPlist.strings */; };
+		F2665D4B190A49A5004A1013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2665D4A190A49A5004A1013 /* main.m */; };
+		F2665D4F190A49A5004A1013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2665D4E190A49A5004A1013 /* AppDelegate.m */; };
+		F2665D52190A49A5004A1013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2665D50190A49A5004A1013 /* Main.storyboard */; };
+		F2665D57190A49A5004A1013 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2665D56190A49A5004A1013 /* Images.xcassets */; };
+		F2665D5E190A49A5004A1013 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2665D5D190A49A5004A1013 /* XCTest.framework */; };
+		F2665D5F190A49A5004A1013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2665D3E190A49A4004A1013 /* Foundation.framework */; };
+		F2665D60190A49A5004A1013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2665D42190A49A5004A1013 /* UIKit.framework */; };
+		F2665D68190A49A6004A1013 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2665D66190A49A6004A1013 /* InfoPlist.strings */; };
+		F2665D6A190A49A6004A1013 /* Night_LightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2665D69190A49A6004A1013 /* Night_LightTests.m */; };
+		F2665D75190A4ABC004A1013 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2665D74190A4ABC004A1013 /* SettingsViewController.m */; };
+		F2665D78190A4ADE004A1013 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2665D77190A4ADE004A1013 /* MainViewController.m */; };
+		F285571B1920B090000FE628 /* AlarmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F285571A1920B090000FE628 /* AlarmObject.m */; };
+		F285571E1920B344000FE628 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F285571D1920B344000FE628 /* TimerObject.m */; };
+		F28557211920B733000FE628 /* TimerSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F28557201920B733000FE628 /* TimerSettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2665D61190A49A6004A1013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2665D33190A49A4004A1013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2665D3A190A49A4004A1013;
+			remoteInfo = "Night Light";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2301AA5190F6EF400857BE1 /* NightLightObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NightLightObject.h; sourceTree = "<group>"; };
+		F2301AA6190F6EF400857BE1 /* NightLightObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NightLightObject.m; sourceTree = "<group>"; };
+		F2301AAB1910A5FD00857BE1 /* AlarmSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSettingsViewController.h; sourceTree = "<group>"; };
+		F2301AAC1910A5FD00857BE1 /* AlarmSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSettingsViewController.m; sourceTree = "<group>"; };
+		F2301AAE1910A62200857BE1 /* ClockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockObject.h; path = ../ClockObject.h; sourceTree = "<group>"; };
+		F2301AAF1910A62200857BE1 /* ClockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockObject.m; path = ../ClockObject.m; sourceTree = "<group>"; };
+		F2665D3B190A49A4004A1013 /* Night Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2665D3E190A49A4004A1013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2665D40190A49A5004A1013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2665D42190A49A5004A1013 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2665D46190A49A5004A1013 /* Night Light-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Night Light-Info.plist"; sourceTree = "<group>"; };
+		F2665D48190A49A5004A1013 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2665D4A190A49A5004A1013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2665D4C190A49A5004A1013 /* Night Light-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Night Light-Prefix.pch"; sourceTree = "<group>"; };
+		F2665D4D190A49A5004A1013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2665D4E190A49A5004A1013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2665D51190A49A5004A1013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2665D56190A49A5004A1013 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2665D5C190A49A5004A1013 /* Night LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night LightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2665D5D190A49A5004A1013 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2665D65190A49A6004A1013 /* Night LightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Night LightTests-Info.plist"; sourceTree = "<group>"; };
+		F2665D67190A49A6004A1013 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2665D69190A49A6004A1013 /* Night_LightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Night_LightTests.m; sourceTree = "<group>"; };
+		F2665D73190A4ABC004A1013 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		F2665D74190A4ABC004A1013 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		F2665D76190A4ADE004A1013 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		F2665D77190A4ADE004A1013 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		F28557191920B090000FE628 /* AlarmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmObject.h; sourceTree = "<group>"; };
+		F285571A1920B090000FE628 /* AlarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmObject.m; sourceTree = "<group>"; };
+		F285571C1920B344000FE628 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
+		F285571D1920B344000FE628 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
+		F285571F1920B733000FE628 /* TimerSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerSettingsViewController.h; sourceTree = "<group>"; };
+		F28557201920B733000FE628 /* TimerSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerSettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2665D38190A49A4004A1013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2665D41190A49A5004A1013 /* CoreGraphics.framework in Frameworks */,
+				F2665D43190A49A5004A1013 /* UIKit.framework in Frameworks */,
+				F2665D3F190A49A5004A1013 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2665D59190A49A5004A1013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2665D5E190A49A5004A1013 /* XCTest.framework in Frameworks */,
+				F2665D60190A49A5004A1013 /* UIKit.framework in Frameworks */,
+				F2665D5F190A49A5004A1013 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2301AA8190F7E7F00857BE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2301AA5190F6EF400857BE1 /* NightLightObject.h */,
+				F2301AA6190F6EF400857BE1 /* NightLightObject.m */,
+				F2301AAE1910A62200857BE1 /* ClockObject.h */,
+				F2301AAF1910A62200857BE1 /* ClockObject.m */,
+				F28557191920B090000FE628 /* AlarmObject.h */,
+				F285571A1920B090000FE628 /* AlarmObject.m */,
+				F285571C1920B344000FE628 /* TimerObject.h */,
+				F285571D1920B344000FE628 /* TimerObject.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F2301AA9190F7EAF00857BE1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D76190A4ADE004A1013 /* MainViewController.h */,
+				F2665D77190A4ADE004A1013 /* MainViewController.m */,
+				F2665D73190A4ABC004A1013 /* SettingsViewController.h */,
+				F2665D74190A4ABC004A1013 /* SettingsViewController.m */,
+				F2301AAB1910A5FD00857BE1 /* AlarmSettingsViewController.h */,
+				F2301AAC1910A5FD00857BE1 /* AlarmSettingsViewController.m */,
+				F285571F1920B733000FE628 /* TimerSettingsViewController.h */,
+				F28557201920B733000FE628 /* TimerSettingsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F2301AAA190F7EC200857BE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D50190A49A5004A1013 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F2665D32190A49A4004A1013 = {
+			isa = PBXGroup;
+			children = (
+				F2665D44190A49A5004A1013 /* Night Light */,
+				F2665D63190A49A6004A1013 /* Night LightTests */,
+				F2665D3D190A49A4004A1013 /* Frameworks */,
+				F2665D3C190A49A4004A1013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2665D3C190A49A4004A1013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D3B190A49A4004A1013 /* Night Light.app */,
+				F2665D5C190A49A5004A1013 /* Night LightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2665D3D190A49A4004A1013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D3E190A49A4004A1013 /* Foundation.framework */,
+				F2665D40190A49A5004A1013 /* CoreGraphics.framework */,
+				F2665D42190A49A5004A1013 /* UIKit.framework */,
+				F2665D5D190A49A5004A1013 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2665D44190A49A5004A1013 /* Night Light */ = {
+			isa = PBXGroup;
+			children = (
+				F2301AAA190F7EC200857BE1 /* Views */,
+				F2301AA9190F7EAF00857BE1 /* Controllers */,
+				F2301AA8190F7E7F00857BE1 /* Models */,
+				F2665D4D190A49A5004A1013 /* AppDelegate.h */,
+				F2665D4E190A49A5004A1013 /* AppDelegate.m */,
+				F2665D56190A49A5004A1013 /* Images.xcassets */,
+				F2665D45190A49A5004A1013 /* Supporting Files */,
+			);
+			path = "Night Light";
+			sourceTree = "<group>";
+		};
+		F2665D45190A49A5004A1013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D46190A49A5004A1013 /* Night Light-Info.plist */,
+				F2665D47190A49A5004A1013 /* InfoPlist.strings */,
+				F2665D4A190A49A5004A1013 /* main.m */,
+				F2665D4C190A49A5004A1013 /* Night Light-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2665D63190A49A6004A1013 /* Night LightTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D69190A49A6004A1013 /* Night_LightTests.m */,
+				F2665D64190A49A6004A1013 /* Supporting Files */,
+			);
+			path = "Night LightTests";
+			sourceTree = "<group>";
+		};
+		F2665D64190A49A6004A1013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2665D65190A49A6004A1013 /* Night LightTests-Info.plist */,
+				F2665D66190A49A6004A1013 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2665D3A190A49A4004A1013 /* Night Light */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2665D6D190A49A6004A1013 /* Build configuration list for PBXNativeTarget "Night Light" */;
+			buildPhases = (
+				F2665D37190A49A4004A1013 /* Sources */,
+				F2665D38190A49A4004A1013 /* Frameworks */,
+				F2665D39190A49A4004A1013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Night Light";
+			productName = "Night Light";
+			productReference = F2665D3B190A49A4004A1013 /* Night Light.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2665D5B190A49A5004A1013 /* Night LightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2665D70190A49A6004A1013 /* Build configuration list for PBXNativeTarget "Night LightTests" */;
+			buildPhases = (
+				F2665D58190A49A5004A1013 /* Sources */,
+				F2665D59190A49A5004A1013 /* Frameworks */,
+				F2665D5A190A49A5004A1013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2665D62190A49A6004A1013 /* PBXTargetDependency */,
+			);
+			name = "Night LightTests";
+			productName = "Night LightTests";
+			productReference = F2665D5C190A49A5004A1013 /* Night LightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2665D33190A49A4004A1013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "James Chen";
+				TargetAttributes = {
+					F2665D5B190A49A5004A1013 = {
+						TestTargetID = F2665D3A190A49A4004A1013;
+					};
+				};
+			};
+			buildConfigurationList = F2665D36190A49A4004A1013 /* Build configuration list for PBXProject "Night Light" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2665D32190A49A4004A1013;
+			productRefGroup = F2665D3C190A49A4004A1013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2665D3A190A49A4004A1013 /* Night Light */,
+				F2665D5B190A49A5004A1013 /* Night LightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2665D39190A49A4004A1013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2665D57190A49A5004A1013 /* Images.xcassets in Resources */,
+				F2665D49190A49A5004A1013 /* InfoPlist.strings in Resources */,
+				F2665D52190A49A5004A1013 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2665D5A190A49A5004A1013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2665D68190A49A6004A1013 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2665D37190A49A4004A1013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2665D4F190A49A5004A1013 /* AppDelegate.m in Sources */,
+				F2665D4B190A49A5004A1013 /* main.m in Sources */,
+				F2665D75190A4ABC004A1013 /* SettingsViewController.m in Sources */,
+				F2301AB01910A62200857BE1 /* ClockObject.m in Sources */,
+				F285571B1920B090000FE628 /* AlarmObject.m in Sources */,
+				F28557211920B733000FE628 /* TimerSettingsViewController.m in Sources */,
+				F2301AAD1910A5FD00857BE1 /* AlarmSettingsViewController.m in Sources */,
+				F2301AA7190F6EF400857BE1 /* NightLightObject.m in Sources */,
+				F285571E1920B344000FE628 /* TimerObject.m in Sources */,
+				F2665D78190A4ADE004A1013 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2665D58190A49A5004A1013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2665D6A190A49A6004A1013 /* Night_LightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2665D62190A49A6004A1013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2665D3A190A49A4004A1013 /* Night Light */;
+			targetProxy = F2665D61190A49A6004A1013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2665D47190A49A5004A1013 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2665D48190A49A5004A1013 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2665D50190A49A5004A1013 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2665D51190A49A5004A1013 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2665D66190A49A6004A1013 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2665D67190A49A6004A1013 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2665D6B190A49A6004A1013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2665D6C190A49A6004A1013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2665D6E190A49A6004A1013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Night Light/Night Light-Prefix.pch";
+				INFOPLIST_FILE = "Night Light/Night Light-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2665D6F190A49A6004A1013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Night Light/Night Light-Prefix.pch";
+				INFOPLIST_FILE = "Night Light/Night Light-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2665D71190A49A6004A1013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Night Light.app/Night Light";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Night Light/Night Light-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Night LightTests/Night LightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2665D72190A49A6004A1013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Night Light.app/Night Light";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Night Light/Night Light-Prefix.pch";
+				INFOPLIST_FILE = "Night LightTests/Night LightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2665D36190A49A4004A1013 /* Build configuration list for PBXProject "Night Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2665D6B190A49A6004A1013 /* Debug */,
+				F2665D6C190A49A6004A1013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2665D6D190A49A6004A1013 /* Build configuration list for PBXNativeTarget "Night Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2665D6E190A49A6004A1013 /* Debug */,
+				F2665D6F190A49A6004A1013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2665D70190A49A6004A1013 /* Build configuration list for PBXNativeTarget "Night LightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2665D71190A49A6004A1013 /* Debug */,
+				F2665D72190A49A6004A1013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2665D33190A49A4004A1013 /* Project object */;
+}
