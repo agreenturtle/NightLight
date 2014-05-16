@@ -49,6 +49,9 @@
     isOn = YES;
     
     imageView.backgroundColor = [UIColor colorWithRed:redColor green:greenColor blue:blueColor alpha:alpha];
+    _timer = [[TimerObject alloc] init];
+    [_timer initLockTime];
+    
 }
 
 -(void) updateNightLight:(UIImageView*) imageView

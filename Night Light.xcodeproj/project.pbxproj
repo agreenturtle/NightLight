@@ -28,6 +28,7 @@
 		F285571B1920B090000FE628 /* AlarmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F285571A1920B090000FE628 /* AlarmObject.m */; };
 		F285571E1920B344000FE628 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F285571D1920B344000FE628 /* TimerObject.m */; };
 		F28557211920B733000FE628 /* TimerSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F28557201920B733000FE628 /* TimerSettingsViewController.m */; };
+		F2A32BEF1925F7A2009996F1 /* IdleTimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A32BEE1925F7A2009996F1 /* IdleTimerObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		F285571D1920B344000FE628 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
 		F285571F1920B733000FE628 /* TimerSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerSettingsViewController.h; sourceTree = "<group>"; };
 		F28557201920B733000FE628 /* TimerSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerSettingsViewController.m; sourceTree = "<group>"; };
+		F2A32BED1925F7A2009996F1 /* IdleTimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleTimerObject.h; sourceTree = "<group>"; };
+		F2A32BEE1925F7A2009996F1 /* IdleTimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdleTimerObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				F285571A1920B090000FE628 /* AlarmObject.m */,
 				F285571C1920B344000FE628 /* TimerObject.h */,
 				F285571D1920B344000FE628 /* TimerObject.m */,
+				F2A32BED1925F7A2009996F1 /* IdleTimerObject.h */,
+				F2A32BEE1925F7A2009996F1 /* IdleTimerObject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				F2301AA7190F6EF400857BE1 /* NightLightObject.m in Sources */,
 				F285571E1920B344000FE628 /* TimerObject.m in Sources */,
 				F2665D78190A4ADE004A1013 /* MainViewController.m in Sources */,
+				F2A32BEF1925F7A2009996F1 /* IdleTimerObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

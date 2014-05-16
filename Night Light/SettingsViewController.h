@@ -11,6 +11,7 @@
 #import "AlarmSettingsViewController.h"
 #import "TimerSettingsViewController.h"
 #import "ClockObject.h"
+#import "IdleTimerObject.h"
 
 @protocol SettingsViewControllerDelegate <NSObject>
 -(void) closeSettingsViewController:(id)sender;
@@ -21,4 +22,5 @@
 
 @property NightLightObject *nightLight;
 @property ClockObject *clock;
+@property IdleTimerObject *idleTimer;
 @end

@@ -28,13 +28,12 @@
     
     NightLightObject *nightLight;
     ClockObject *clock;
-    
+    IdleTimerObject *idleTimer;
 }
 
 - (void)viewDidLoad
 {
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
-    [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
     
     [self updateTime];
     [super viewDidLoad];
@@ -46,8 +45,31 @@
     [clock initClockObject];
     [clock updateClock:_clockLabel];
     
+    idleTimer = [[IdleTimerObject alloc] init];
+    [idleTimer initIdleTimerObject];
+    
     _directionLabel.text = @"Touch to turn off";
     _timerImageView.backgroundColor = [UIColor clearColor];
+    
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetIdleTimer)];
+    [singleTap setNumberOfTouchesRequired:1];
+    [singleTap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:singleTap];
+    singleTap = nil;
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName: UIApplicationWillEnterForegroundNotification object: nil queue: [NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+        [idleTimer resetTimer];
+    }];
+    
+    
+    [idleTimer setMaxIdleTime:[nightLight.timer getLockTimeWithBatteryInSeconds]];
+    
+    //UIDeviceBatteryState currentState = [[UIDevice currentDevice] batteryState];
+    //if (currentState == UIDeviceBatteryStateCharging || currentState == UIDeviceBatteryStateFull) {
+        // The battery is either charging, or connected to a charger and is fully charged
+        
+    //}
     
 }
 
@@ -90,6 +112,9 @@
         [self activateAlarm];
     }
     [clock updateClock:_clockLabel];
+    int temp = [idleTimer getIdleTime];
+    int temp2 = [idleTimer getMaxIdleTime];
+    NSLog(@"--Idle time: %i with max idle time: %i", temp, temp2);
     [self performSelector:@selector(updateTime) withObject:self afterDelay:1.0];
 }
 
@@ -129,6 +154,10 @@
     }];
 }
 
+-(void) resetIdleTimer
+{
+    [idleTimer resetTimer];
+}
 
 -(void) closeSettingsViewController:(id)sender
 {
@@ -138,6 +167,7 @@
     [nightLight updateNightLight:_imageView];
     
     [clock.alarm updateAlarmImage:_timerImageView];
+    [idleTimer resetTimer];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -149,6 +179,7 @@
     [nextVC setNightLight:nightLight];
     [nextVC setDelegate:self];
     [nextVC setClock:clock];
+    [nextVC setIdleTimer:idleTimer];
 }
 
 @end

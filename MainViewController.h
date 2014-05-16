@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#include "SettingsViewController.h"
-#include "NightLightObject.h"
-#include "ClockObject.h"
+#import "SettingsViewController.h"
+#import "NightLightObject.h"
+#import "ClockObject.h"
+#import "IdleTimerObject.h"
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface MainViewController : UIViewController <SettingsViewControllerDelegate>

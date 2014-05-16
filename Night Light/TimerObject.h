@@ -23,8 +23,10 @@ enum timeSettings
 @property (nonatomic) enum timeSettings lockTimeWithBattery;
 @property (nonatomic) enum timeSettings lockTimeWhileCharging;
 
--(void) setLockTimeWithBattery:(enum timeSettings)lockTimeWithBattery;
--(void) setLockTimeWhileCharging:(enum timeSettings)lockTimeWhileCharging;
+-(void) initLockTime;
+
+-(void) assignLockTimeWithBattery:(int)selectedRow;
+-(void) assignLockTimeWhileCharging:(int)selectedRow;
 
 -(int) getLockTimeWithBatteryInSeconds;
 -(int) getLockTimeWhileChargingInSeconds;

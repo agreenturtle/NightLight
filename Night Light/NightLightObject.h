@@ -16,12 +16,12 @@
 -(CGFloat) getGreenColor;
 -(CGFloat) getBlueColor;
 
+-(void) initNightLightWithImageView:(UIImageView*) imageView;
+
 -(void) setOn:(BOOL) value;
 -(void) setRedColor:(CGFloat)newRedColor
       andGreenColor:(CGFloat) newGreenColor
        andBlueColor:(CGFloat) newBlueColor;
-
--(void) initNightLightWithImageView:(UIImageView*) imageView;
 
 -(void) updateNightLight:(UIImageView*) imageView;
 -(void) turnOnOff:(UIImageView*) imageView;

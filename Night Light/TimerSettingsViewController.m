@@ -40,6 +40,11 @@
                   @"Never",
                   nil];
     
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetIdleTimer)];
+    [singleTap setNumberOfTouchesRequired:1];
+    [singleTap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:singleTap];
+    singleTap = nil;
     // Do any additional setup after loading the view.
 }
 
@@ -69,6 +74,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     cell.textLabel.text = timeLabels[indexPath.row];
+    [self isSelectedRow:cell withIndexPath:indexPath];
     
     return cell;
 }
@@ -80,8 +86,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    
+    if (indexPath.section == 0)
+    {
+        [_timer assignLockTimeWithBattery:indexPath.row];
+        [_idleTimer setMaxIdleTime:[_timer getLockTimeWithBatteryInSeconds]];
+    }
+    else
+    {
+        [_timer assignLockTimeWhileCharging:indexPath.row];
+        [_idleTimer setMaxIdleTime:[_timer getLockTimeWhileChargingInSeconds]];
+    }
+    [_tableView reloadData];
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -97,6 +112,64 @@
     [self.delegate closeTimerSettingsViewController:self];
 }
 
+-(int) returnRowForSelectedTimeSetting:(enum timeSettings) currentTimeSetting
+{
+    switch (currentTimeSetting) {
+        case oneMinute:
+            return 0;
+            break;
+        case fiveMinutes:
+            return 1;
+            break;
+        case tenMinutes:
+            return 2;
+            break;
+        case fifteenMinutes:
+            return 3;
+            break;
+        case halfAnHour:
+            return 4;
+            break;
+        case oneHour:
+            return 5;
+            break;
+        case never:
+            return 6;
+            break;
+        default:
+            break;
+    }
+}
+
+-(void) isSelectedRow:(UITableViewCell*) cell withIndexPath:(NSIndexPath*) indexPath
+{
+    UIImage *checkmarkImage = [UIImage imageNamed:@"Checkmark"];
+    UIImage *blankImage = [UIImage imageNamed:@"BlankImage"];
+    
+    if (indexPath.section == 0)
+    {
+        if (indexPath.row == [self returnRowForSelectedTimeSetting:_timer.lockTimeWithBattery]) {
+            cell.imageView.image = checkmarkImage;
+        }
+        else{
+            cell.imageView.image = blankImage;
+        }
+    }
+    else
+    {
+        if (indexPath.row == [self returnRowForSelectedTimeSetting:_timer.lockTimeWhileCharging]){
+            cell.imageView.image = checkmarkImage;
+        }
+        else{
+            cell.imageView.image = blankImage;
+        }
+    }
+}
+
+-(void) resetIdleTimer
+{
+    [_idleTimer resetTimer];
+}
 /*
 #pragma mark - Navigation
 

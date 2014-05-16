@@ -320,6 +320,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="udS-nb-NSE" id="aLa-Me-qHr"/>
+                                    <outlet property="delegate" destination="udS-nb-NSE" id="qHj-8Y-uON"/>
                                 </connections>
                             </tableView>
                         </subviews>

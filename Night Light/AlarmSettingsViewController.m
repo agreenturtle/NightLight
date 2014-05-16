@@ -28,6 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetIdleTimer)];
+    [singleTap setNumberOfTouchesRequired:1];
+    [singleTap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:singleTap];
+    singleTap = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -168,6 +174,10 @@
     [self.delegate closeAlarmSettingsViewController:self];
 }
 
+-(void) resetIdleTimer
+{
+    [_idleTimer resetTimer];
+}
 /*
 #pragma mark - Navigation
 

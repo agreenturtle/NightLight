@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
 
-    
+    [_idleTimer resetTimer];
     
     _redSlider.value = [_nightLight getRedColor];
     _greenSlider.value = [_nightLight getGreenColor];
@@ -45,6 +45,12 @@
     
     _imageView.backgroundColor = [UIColor clearColor];
     [self updatePreviewImage];
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetIdleTimer)];
+    [singleTap setNumberOfTouchesRequired:1];
+    [singleTap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:singleTap];
+    singleTap = nil;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -170,6 +176,10 @@
     [self.delegate closeSettingsViewController:self];
 }
 
+-(void) resetIdleTimer
+{
+    [_idleTimer resetTimer];
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -179,6 +189,7 @@
         
         [nextVC setDelegate:self];
         [nextVC setClock:_clock];
+        [nextVC setIdleTimer:_idleTimer];
     }
     else
     {
@@ -186,6 +197,7 @@
         
         [nextVC setDelegate:self];
         [nextVC setTimer:_nightLight.timer];
+        [nextVC setIdleTimer:_idleTimer];
     }
     
 }
@@ -194,12 +206,14 @@
 {
     _clock = ((AlarmSettingsViewController*)sender).clock;
     [_timeTableView reloadData];
+    [_idleTimer resetTimer];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void) closeTimerSettingsViewController:(id)sender
 {
+    [_idleTimer resetTimer];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

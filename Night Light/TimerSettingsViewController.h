@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TimerObject.h"
+#import "IdleTimerObject.h"
 
 @protocol TimerSettingsViewControllerDelegate <NSObject>
 -(void) closeTimerSettingsViewController:(id) sender;
@@ -16,4 +17,6 @@
 @interface TimerSettingsViewController : UIViewController
 @property (weak, nonatomic) id<TimerSettingsViewControllerDelegate> delegate;
 @property (nonatomic) TimerObject *timer;
+@property IdleTimerObject *idleTimer;
+
 @end

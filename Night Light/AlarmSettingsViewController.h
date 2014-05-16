@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ClockObject.h"
+#import "IdleTimerObject.h"
+
 @protocol AlarmSettingsViewControllerDelegate <NSObject>
 -(void) closeAlarmSettingsViewController:(id)sender;
 @end
@@ -17,5 +19,5 @@
 @property (weak, nonatomic) id<AlarmSettingsViewControllerDelegate> delegate;
 
 @property (nonatomic) ClockObject *clock;
-
+@property IdleTimerObject *idleTimer;
 @end
