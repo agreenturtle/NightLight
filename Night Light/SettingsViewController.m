@@ -138,6 +138,7 @@
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
     CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 30.0);
     CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), redColor, greenColor, blueColor, alpha);
+    //CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, alpha);
     CGContextMoveToPoint(UIGraphicsGetCurrentContext(),37, 37);
     CGContextAddLineToPoint(UIGraphicsGetCurrentContext(),37, 37);
     CGContextStrokePath(UIGraphicsGetCurrentContext());
@@ -158,9 +159,6 @@
             break;
         case 2:
             blueColor = currentSlider.value/255.0f;
-            break;
-        case 3:
-            alpha = currentSlider.value;
             break;
         default:
             break;

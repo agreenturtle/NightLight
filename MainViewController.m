@@ -99,7 +99,7 @@
     [clock.alarm turnOffAlarm];
     [self alarmButtonViewHide];
 }
-- (IBAction)clickSnooze:(id)sender
+- (IBAction)clickSnooze
 {
     [clock.alarm snoozeAlarm];
     [self alarmButtonViewHide];
@@ -157,6 +157,20 @@
 -(void) resetIdleTimer
 {
     [idleTimer resetTimer];
+}
+
+-(BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if(motion == UIEventSubtypeMotionShake)
+    {
+        if(clock.alarm.alarmIsActivated == YES)
+            [self clickSnooze];
+    }
 }
 
 -(void) closeSettingsViewController:(id)sender
